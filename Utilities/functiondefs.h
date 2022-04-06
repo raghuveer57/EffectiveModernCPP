@@ -70,3 +70,14 @@ void funUnivReference(T&& param)
     cout << "param = " << type_id_with_cvr<decltype(param)>().pretty_name() << endl
          << endl;
 }
+
+// function to return the size of array as compile type constant
+// constexpr - make the result available at compile time 
+// noexcept - help compilers generate better code
+//  we are also not specifying the array param since we are
+// only interested in the size of array
+template <typename T, size_t N>
+constexpr size_t arraySize(T (&)[N]) noexcept
+{
+    return N;
+} 
