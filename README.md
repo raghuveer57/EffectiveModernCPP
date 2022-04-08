@@ -1,10 +1,10 @@
 # EffectiveModernCPP
- Examples of Scott Meyers effective C++ edition and personal notes
+ Code examples of Scott Meyers effective C++ edition and personal wiki notes section
 
  ## Repository structure
- Each folder will have example codes from the lesson and a .md file explaning some important points
+ Each folder will have example codes from that corresponding topic and a wiki page explaining few things
 
- A separate Utilities folder which contains all the heloper functions.
+ A separate Utilities folder which contains all the helper functions or function declarations that are used extensively through out the book.
 
  ## Pre-requisites
     CMake
