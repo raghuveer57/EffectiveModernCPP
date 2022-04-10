@@ -95,3 +95,12 @@ constexpr size_t arraySize(T (&)[N]) noexcept
 {
     return N;
 } 
+
+/* Function to authenticate the user before returning 
+*/
+template <typename Container, typename Index>
+decltype(auto) authAndAcess(Container &&c, Index i)
+{
+    //perform authentication
+    return std::forward<Container>(c)[i];
+}
