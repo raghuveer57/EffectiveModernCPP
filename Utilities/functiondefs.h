@@ -96,7 +96,10 @@ constexpr size_t arraySize(T (&)[N]) noexcept
     return N;
 } 
 
-/* Function to authenticate the user before returning 
+/* Function to authenticate the user before returning
+   use declType(auto) as return type,
+   pass universal ref as parameter to handle edge cases,
+   use std::forward<T>(param) to work with universal refs
 */
 template <typename Container, typename Index>
 decltype(auto) authAndAcess(Container &&c, Index i)

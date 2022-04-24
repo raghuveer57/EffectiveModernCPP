@@ -10,6 +10,7 @@ project ("EffectiveCPP")
 
 # Include sub-projects.
 add_subdirectory ("DeducingTypes")
+add_subdirectory ("Auto")
 find_package(Boost) 
 if(Boost_FOUND)
     include_directories(${Boost_INCLUDE_DIRS}) 
